@@ -10,7 +10,7 @@ import Service from './components/Services/Service.jsx';
 
 const router = createBrowserRouter([
   {
-    path : '/',
+    path : 'reactporfolio',
     element : <Layout />,
     children : [
       {
