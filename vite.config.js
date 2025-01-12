@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base : "/reactporfolio/",
+  base: process.env.NODE_ENV === 'production' ? '/reactporfolio/' : '/', // Correct base for prod and dev
   plugins: [react()],
-})
+  server: {
+    historyApiFallback: true, // Ensure Vite supports SPA routing
+  },
+});
