@@ -93,7 +93,7 @@ const Home = () => {
       title: "CoinPayWise – Cryptocurrency Payment Platform",
       description: "A secure and efficient platform for accepting cryptocurrency payments. Simplifying digital currency transactions for businesses.",
       image: "../../../img2/banner.webp",  
-      url: "https://coinpaywise.com"
+      url: "https://coinpayways.com"
     },
     {
       id: 2,
